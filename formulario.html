@@ -15,7 +15,7 @@
   <h1>Bienvenidos a mi fiesta</h1>
   <h2>Por favor, confirmar asistencia:</h2>
 
-  <form class="formulario">
+  <form class="formulario" id="form">
     Nombre <input type="text" name="name" id="name">
     <br />
     Edad <input type="number" name="age" id="age">
@@ -32,9 +32,11 @@
     <input type="submit">
   </form>
 </div>
-
+<!-- Se cambia de h3 a div para poder añadir margin -->
   <div class="wrapper">
-    <h2>Lista de invitados</h2>
+    <div id="lista-de-invitados">
+    <h3>Lista de invitados</h3>
+    </div>
   </div>
 
   <script src="../formulario.js"></script>

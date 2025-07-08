@@ -6,8 +6,8 @@ body {
 
 /* Se modifica estilo global */
 body, html {
-  height: 90%;
-  margin: 0;
+  height: auto;
+  margin: 0;  
   padding: 0;
   display: block;
   justify-content: center;
@@ -16,7 +16,7 @@ body, html {
 
 /* Se añade contenedor "wrapper"*/
 .wrapper {
-  margin: 0;
+  margin:0;
   padding: 0;
   max-width: 30%;
   margin: 4rem auto;
@@ -26,13 +26,14 @@ body, html {
 }
 
 /* Se estilizan encabezados*/
-.wrapper h1, h2 {
+.wrapper h1, h2,h3 {
   padding: 10px;
   display: block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(255, 249, 225);
   align-items: center;
   text-align: center;
+  border: 10px;
 }
 
 /* Se refinan estilos */
@@ -40,7 +41,6 @@ body, html {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  width: 400px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
@@ -51,6 +51,7 @@ body, html {
   padding: 4px;
   margin: 5px;
   height: 30px;
+  width: 100%;
   border-radius: 5px;
   background-color: #f1d8b246;
   color: #fffaf3;
@@ -77,22 +78,68 @@ body, html {
   background-color: red;
 }
 
+/* Se añaden y modifican clases e ID's*/
+
 .elemento-lista {
-  color: #4b1248;
   font-family: Verdana;
-  margin: 10px 0;
-  border: 5px solid #4b1248;
+  margin: 10px;
+  border: 10px solid;
+  border-image: linear-gradient(90deg, #4b1248,#f0c27b) 1;
   border-radius: 5px;
-  padding: 0 5px;
-  width: 400px;
-  margin: 20px
+  width: auto;
+  margin: 10px;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+}
+
+#boton-borrar {
+  background-color: #240622;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  border-radius: 5px;
+  position: relative;
+  padding: 5px 10px;
+  left: 50%;
+  transform: translateX(-60%);
+}
+
+#boton-borrar:hover {
+  font-style: italic;
+  border: 2px solid;
+  border-radius: 5px;
+  border-image: linear-gradient(45deg, #800606,#f0c27b) 1;
 }
 
 .elemento-lista input {
   border: none;
   background: none;
-  color: #4b1248;
+  color: #fffaf3;
   font-family: Verdana;
-  margin: 10px 0;
   font-size: 16px;
+}
+
+.elemento-lista button {
+  top: -10px;
+}
+
+.descripcion {
+  font-weight: normal;
+  color: #ecddc8;
+}
+
+#lista-de-invitados {
+padding: 15px;
+}
+
+.nombre-invitado {
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding: 5px 10px;
+  left: 50%;
+  transform: translateX(-55%);
+  color:#ffddaa !important;
 }
